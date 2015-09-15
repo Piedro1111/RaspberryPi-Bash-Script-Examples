@@ -1,4 +1,4 @@
-# RaspberryPi-Bash-Script-Examples
+# RaspberryPi Bash Script Examples
 Bash Script Examples writing for Raspbian
 
 ## Requirements
