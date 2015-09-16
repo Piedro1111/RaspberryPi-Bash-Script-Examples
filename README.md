@@ -23,4 +23,4 @@ Image: _Raspberry Pi Model B 1GB_
 ## End script
 * Some scripts end automaticaly but you can cancel running script by CTRL+C.
 
-Hawe fun and profit
+Have fun and profit
