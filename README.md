@@ -18,10 +18,12 @@ Image: _Raspberry Pi Model B 1GB_
 1. Open terminal _(CTRL+T or CTRL+ALT+F1)_
 2. Write command in terminal like this `sudo ./blink.sh`
 3. Add GPIO ID when your script asks a question
+
 ![Raspberry Pi ssh terminal window](http://www.opensencillo.com/wp-content/uploads/2015/09/Snímka-obrazovky-z-2015-09-16-210049.png)
 Image: _SSH Putty_
 
 4. When answer all start up questions, script will be run
+
 ![Raspbian script](http://www.opensencillo.com/wp-content/uploads/2015/09/Snímka-obrazovky-z-2015-09-16-210058.png)
 Image: _Raspberry Pi started bash script_
 
