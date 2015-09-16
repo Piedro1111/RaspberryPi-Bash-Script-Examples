@@ -1,4 +1,4 @@
-# RaspberryPi Bash Script Examples
+# RaspberryPi [Bash](https://en.wikipedia.org/wiki/Bash_%28Unix_shell%29) Script Examples
 Bash Script Examples writing for [Raspbian OS](https://www.raspbian.org/)
 
 ![Raspberry Pi image](https://www.raspberrypi.org/wp-content/uploads/2015/01/Pi2ModB1GB_-comp.jpeg)
@@ -7,7 +7,7 @@ Image: _Raspberry Pi 2 Model B 1GB_
 ## Requirements
 * RaspberryPi [GPIO](https://en.wikipedia.org/wiki/General-purpose_input/output) library
 * [Raspbian OS](https://www.raspbian.org/) Wheezy
-* Bash support
+* [Bash](https://en.wikipedia.org/wiki/Bash_%28Unix_shell%29) support
 * [GPIO](https://en.wikipedia.org/wiki/General-purpose_input/output) 13 must be input! 
 
 ## Install
