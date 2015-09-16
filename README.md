@@ -1,23 +1,23 @@
 # RaspberryPi Bash Script Examples
-Bash Script Examples writing for Raspbian
+Bash Script Examples writing for [Raspbian OS](https://www.raspbian.org/)
 
 ![Raspberry Pi image](https://www.raspberrypi.org/wp-content/uploads/2015/01/Pi2ModB1GB_-comp.jpeg)
 Image: _Raspberry Pi 2 Model B 1GB_
 
 ## Requirements
-* RaspberryPi GPIO library
-* Raspbian Wheezy
+* RaspberryPi [GPIO](https://en.wikipedia.org/wiki/General-purpose_input/output) library
+* [Raspbian OS](https://www.raspbian.org/) Wheezy
 * Bash support
-* GPIO 13 must be input! 
+* [GPIO](https://en.wikipedia.org/wiki/General-purpose_input/output) 13 must be input! 
 
 ## Install
-1. Copy files from `/example/` in to path `home/user/` _(in Raspbian OS)_
+1. Copy files from `/example/` in to path `home/user/` _(in [Raspbian OS](https://www.raspbian.org/))_
 2. And open it in terminal as sudo user
 
-## Run in Raspbian bash terminal
+## Run in [Raspbian OS](https://www.raspbian.org/) bash terminal
 1. Open terminal _(CTRL+T or CTRL+ALT+F1)_
 2. Write command in terminal like this `sudo ./blink.sh`
-3. Add GPIO ID when your script asks a question
+3. Add [GPIO](https://en.wikipedia.org/wiki/General-purpose_input/output) ID when your script asks a question
 
 ![Raspberry Pi ssh terminal window](http://www.opensencillo.com/wp-content/uploads/2015/09/Snímka-obrazovky-z-2015-09-16-210049.png)
 
