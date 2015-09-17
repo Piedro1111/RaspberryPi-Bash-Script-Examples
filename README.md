@@ -4,6 +4,14 @@ Bash Script Examples writing for [Raspbian OS](https://www.raspbian.org/)
 ![Raspberry Pi image](https://www.raspberrypi.org/wp-content/uploads/2015/01/Pi2ModB1GB_-comp.jpeg)
 Image: _Raspberry Pi 2 Model B 1GB_
 
+## Attached scripts
+* blink.sh - blinking LED (On/Off [GPIO](https://en.wikipedia.org/wiki/General-purpose_input/output))
+* colormusic.sh - blink 7 LED one after the other
+* colormusic2.sh - LED gradual lighting up and then gradually turning off
+* ifonline.sh - Check external server status by URL (LED blink / led Off = server is off line; LED lighting = server is online)
+* semafor.sh - Switch On/Off LED like as semafor
+* switch.sh - Switch On/Off GPIO when you write GPIO ID
+
 ## Requirements
 * RaspberryPi [GPIO](https://en.wikipedia.org/wiki/General-purpose_input/output) library
 * [Raspbian OS](https://www.raspbian.org/) Wheezy
