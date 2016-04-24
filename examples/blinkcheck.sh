@@ -22,12 +22,13 @@ echo in > /sys/class/gpio/gpio$gpioin/direction;
 echo "power=1" | tee -i $pathlog;
 echo "ntpdate=1" | tee -a -i $pathlog;
 ntpdate | tee -a -i $pathlog;
-
+date +"%F %T.%N %Z;" | tee -a -i $pathlog;
 sleep 1;
 echo "--------------------------" | tee -a -i $pathlog;
 
 
 ctr=1;
+blinkswitch=0;
 while true; 
 do
   #test IO in run
@@ -35,8 +36,14 @@ do
   ntpinputdata=$(cat teststate);
 
   if [ $ntpinputdata -eq 1 ];
+  then
+	if [ $blinkswitch -eq 0 ];
 	then
-	date +"%F %T.%N %Z;" | tee -a -i $pathlog;
+		date +"%F %T.%N %Z;" | tee -a -i $pathlog;
+		blinkswitch=1;
+	fi
+  else
+	blinkswitch=0;
   fi
   ctr=$(($ctr+1));
 
