@@ -19,9 +19,9 @@ echo 1 > /sys/class/gpio/gpio$outin/value;
 echo $gpioin > /sys/class/gpio/export;
 echo in > /sys/class/gpio/gpio$gpioin/direction;
 
-echo "power=1" > $pathlog;
-echo "ntpdate=1" > $pathlog;
-ntpdate &> $pathlog;
+echo "power=1" &>> $pathlog;
+echo "ntpdate=1" &>> $pathlog;
+ntpdate &>> $pathlog;
 
 sleep 1;
 echo "--------------------------";
@@ -36,7 +36,7 @@ do
 
   if [ $ntpinputdata -eq 1 ];
 	then
-	date +"%F %T.%N %Z;" &> $pathlog;
+	date +"%F %T.%N %Z;" &>> $pathlog;
   fi
   ctr=$(($ctr+1));
 
