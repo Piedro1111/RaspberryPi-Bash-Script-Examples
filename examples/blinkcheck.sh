@@ -29,7 +29,9 @@ echo "--------------------------" | tee -a -i $pathlog;
 
 ctr=1;
 blinkswitch=0;
-while true; 
+dif=0;
+string1=date +"%T.%N";
+while true;
 do
   #test IO in run
   cat /sys/class/gpio/gpio$gpioin/value > teststate;
@@ -39,8 +41,13 @@ do
   then
 	if [ $blinkswitch -eq 0 ];
 	then
+		string2=date +"%T.%N";
+		StartDate=$(date -u -d "$string1" +"%s.%N");
+		FinalDate=$(date -u -d "$string2" +"%s.%N");
+		dif=$(date -u -d "0 $FinalDate sec - $StartDate sec" +"%H:%M:%S.%N");
 		date +"%F %T.%N %Z;" | tee -a -i $pathlog;
 		blinkswitch=1;
+		string1=string2;
 	fi
   else
 	blinkswitch=0;
