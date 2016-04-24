@@ -47,7 +47,7 @@ do
 		dif=$(date -u -d "0 $FinalDate sec - $StartDate sec" +"%H:%M:%S.%N");
 		date +"%F %T.%N %Z $dif;" | tee -a -i $pathlog;
 		blinkswitch=1;
-		string1=string2;
+		string1=$(($string2));
 	fi
   else
 	blinkswitch=0;
