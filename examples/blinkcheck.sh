@@ -10,7 +10,7 @@ echo "Set to current time (ntpdate): "
 ntpdate
 
 read -p "Set path to rewrite log file: " pathlog;
-read -p "Accuracy (0.01s~60s, 60 seconds is lowest accuracy)" accuracylvl;
+read -p "Accuracy (0.01s~60s, 60 seconds is lowest accuracy): " accuracylvl;
 
 echo $outin > /sys/class/gpio/export;
 echo out > /sys/class/gpio/gpio$outin/direction;
