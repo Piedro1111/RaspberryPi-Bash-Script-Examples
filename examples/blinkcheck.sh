@@ -30,7 +30,7 @@ echo "--------------------------" | tee -a -i $pathlog;
 ctr=1;
 blinkswitch=0;
 dif=0;
-string1=date +"%T.%N";
+string1=$(date +"%T.%N");
 while true;
 do
   #test IO in run
@@ -41,11 +41,11 @@ do
   then
 	if [ $blinkswitch -eq 0 ];
 	then
-		string2=date +"%T.%N";
+		string2=$(date +"%T.%N");
 		StartDate=$(date -u -d "$string1" +"%s.%N");
 		FinalDate=$(date -u -d "$string2" +"%s.%N");
 		dif=$(date -u -d "0 $FinalDate sec - $StartDate sec" +"%H:%M:%S.%N");
-		date +"%F %T.%N %Z;" | tee -a -i $pathlog;
+		date +"%F %T.%N %Z $dif;" | tee -a -i $pathlog;
 		blinkswitch=1;
 		string1=string2;
 	fi
