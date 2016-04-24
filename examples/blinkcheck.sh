@@ -24,7 +24,7 @@ echo "ntpdate=1" | tee -a -i $pathlog;
 ntpdate | tee -a -i $pathlog;
 
 sleep 1;
-echo "--------------------------";
+echo "--------------------------" | tee -a -i $pathlog;
 
 
 ctr=1;
