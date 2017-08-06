@@ -8,8 +8,8 @@ echo "Timelapse - remove name cache"
 rm *.txt
 echo "... done step 1 of 3"
 echo "Timelapse - create name cache"
-ls -m *.jpg
-ls -m *.jpg > cachenames.txt
+ls *.jpg
+ls *.jpg > cachenames.txt
 echo "... done step 2 of 3"
 echo "Timelapse - create timelapse mpeg4 movie ${timelapseout}.avi"
 mencoder -nosound -ovc lavc -lavcopts vcodec=mpeg4 -o "$timelapseout".avi -mf type=jpeg:fps="$timelapsefps" mf://@cachenames.txt
